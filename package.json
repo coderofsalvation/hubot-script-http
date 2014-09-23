@@ -1,0 +1,24 @@
+{
+  "name": "hubot-script-http",
+  "version": "0.0.1",
+  "description": "run all hubot commands thru the browser (without the need of an extra adapter)",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderofsalvation/hubot-script-http"
+  },
+  "dependencies": {
+  },
+  "keywords": [
+    "Hubot"
+  ],
+  "author": "Leon van Kammen / coderofsalvation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderofsalvation/hubot-script-http/issues"
+  },
+  "homepage": "https://github.com/coderofsalvation/hubot-script-http"
+}
