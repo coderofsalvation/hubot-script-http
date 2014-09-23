@@ -1,7 +1,7 @@
 {
   "name": "hubot-script-http",
-  "version": "0.0.13",
-  "description": "run all hubot commands thru the browser (without the need of an extra adapter)",
+  "version": "0.0.14",
+  "description": "run all hubot commands thru the browser or terminal (without the need of an extra adapter)",
   "main": "index.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
