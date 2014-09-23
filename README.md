@@ -4,19 +4,23 @@ hubot-script-http
 Simple remote execution of hubot commands using bash,
 without the need of an extra rest- or shelladapter.
 
+# Installation
+
+    npm install
+
 # URLS:
 
-   /hubot/cmd/help
-   /hubot/cmd/mustache/me/mark
-   and so on
+    /hubot/cmd/help
+    /hubot/cmd/mustache/me/mark
+    and so on
 
 # Commands:
 
 you need to add your ip in order to get access :
 
-   hubot ip show - shows ip addresses which have http GET-access to /hubot/cmd[/yourcommand]
-   hubot ip add <ip> - adds ip
-   hubot ip flush - clears the ip table
+    hubot ip show - shows ip addresses which have http GET-access to /hubot/cmd[/yourcommand]
+    hubot ip add <ip> - adds ip
+    hubot ip flush - clears the ip table
 
 # Terminal powa!
 
