@@ -1,6 +1,6 @@
 {
   "name": "hubot-script-http",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "run all hubot commands thru the browser (without the need of an extra adapter)",
   "main": "index.coffee",
   "scripts": {

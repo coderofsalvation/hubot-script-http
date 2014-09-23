@@ -27,7 +27,7 @@
 # and so on
 
 spawn = require('child_process').spawn
-{TextMessage} = require '../node_modules/hubot/src/message'
+{TextMessage} = require '../../hubot/src/message'
 
 module.exports = (robot) ->
 
