@@ -13,7 +13,7 @@
   "dependencies": {
   },
   "keywords": [
-    "Hubot"
+    "hubot","browser","http","bash","terminal","console"
   ],
   "author": "Leon van Kammen / coderofsalvation",
   "license": "MIT",
