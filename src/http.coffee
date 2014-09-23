@@ -46,7 +46,8 @@ module.exports = (robot) ->
     msg.send "enabled access for ip "+ip
 
   robot.router.get "/cmd*", (req,res) ->
-    console.log req.ip
+    ip = req.headers['x-forwarded-for'] or req.connection.remoteAddress or req.socket.remoteAddress or req.connection.socket.remoteAddress;
+    if ip not in robot.brain.data.ip then return res.end "access denied"
     if req.ip not in robot.brain.data.ip then return res.end "access denied"
     args = req.url.split "/"
     args = args.filter (i) -> i isnt "cmd" and i isnt ""

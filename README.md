@@ -50,9 +50,10 @@ to work/massage data with.
 
 # Security 
 
-This is a proof of concept, therefore its not totally secure.
-The pseudo ip-security is probably fine for intranets but you probably want to 
-add https-auth in case of sensitive-data-over-the-web (which was not my case)
+This is a proof of concept, therefore its not totally secure when you are 
+not using https + hubot's express authentication (using env variables).
+Since not everybody will go thru this labour of setting this up, I've included
+ a pseudo ip-security.
 
 # Todo 
 
