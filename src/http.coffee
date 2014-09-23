@@ -52,9 +52,10 @@ module.exports = (robot) ->
     args = req.url.split "/"
     args = args.filter (i) -> i isnt "cmd" and i isnt ""
     args = args.join " "
-    robot._send = robot.adapter.send;
+    robot._send ?= robot.adapter.send;
     robot.adapter.send = (user,strings...) ->
-      res.end strings.toString()
-      robot.adapter.send = robot._send;
+      res.end strings.toString() if user.user.name is "http"
+      robot.adapter.send = robot._send if user.user.name isnt "http"
     user = robot.brain.userForId '1', name: 'http', room: 'http'
     robot.receive new TextMessage user, robot.name+" "+args, 'messageId'
+

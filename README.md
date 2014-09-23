@@ -55,7 +55,6 @@ not using https + hubot's express authentication (using env variables).
 Since not everybody will go thru this labour of setting this up, I've included
  a pseudo ip-security.
 
-# Todo 
+# Known issues
 
-Maybe in the future I/somebody will add hooks to the 'enterroom' and 'leaveroom'-events.
-When somebody enters the room, his ip will be added..and remove upon leaving.
+* requesting non-existing commands can cause minor hickups on the adapter (since the adapter is temporarely overridden by httprequests).
