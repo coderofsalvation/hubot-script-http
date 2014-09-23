@@ -18,7 +18,7 @@ without the need of an extra rest- or shelladapter.
 
 you need to add your ip in order to get access :
 
-    hubot ip show - shows ip addresses which have http GET-access to /hubot/cmd[/yourcommand]
+    hubot ip show - shows ip addresses which have http GET-access 
     hubot ip add <ip> - adds ip
     hubot ip flush - clears the ip table
 
@@ -35,7 +35,7 @@ Just put this little shellscript somewhere ('hubotbash' e.g.)
 Then do this:
 
     $ hubotbash help | grep mustache
-    hubot mustache me <query> - Searches Google Images for the specified query and mustaches it.
+    hubot mustache me <query> - Searches Google Images for the specified query 
     hubot mustache me <url> - Adds a mustache to the specified URL.
 
 See? Terminal powa!
