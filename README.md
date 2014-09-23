@@ -18,6 +18,24 @@ you need to add your ip in order to get access :
    hubot ip add <ip> - adds ip
    hubot ip flush - clears the ip table
 
+# Terminal powa!
+
+Just put this little shellscript somewhere ('hubotbash' e.g.)
+
+    #!/bin/bash 
+    PORT=5555
+    URL="http://localhost:$PORT/cmd/$*"
+    URL="${URL// //}"
+    curl "$URL"
+    
+Then do this:
+
+    $ hubotbash help | grep mustache
+    hubot mustache me <query> - Searches Google Images for the specified query and mustaches it.
+    hubot mustache me <url> - Adds a mustache to the specified URL.
+
+See? Terminal powa!
+
 # Why
 
 I made this since I could only find an example which demonstrated
