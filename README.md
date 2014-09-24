@@ -10,8 +10,8 @@ without the need of an extra rest- or shelladapter.
 
 # URLS:
 
-    /hubot/cmd/help
-    /hubot/cmd/mustache/me/mark
+    /cmd/help
+    /cmd/mustache/me/mark
     and so on
 
 # Commands:
@@ -19,7 +19,7 @@ without the need of an extra rest- or shelladapter.
 you need to add your ip in order to get access :
 
     hubot ip show - shows ip addresses which have http GET-access 
-    hubot ip add <ip> - adds ip
+    hubot ip add <ip> - adds ip ( '*' allows everybody )
     hubot ip flush - clears the ip table
 
 # Terminal powa!

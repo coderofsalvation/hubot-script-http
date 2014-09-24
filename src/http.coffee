@@ -18,7 +18,7 @@
 #
 # Commands:
 #   hubot ip show - shows ip addresses which have http GET-access to /hubot/cmd[/yourcommand]
-#   hubot ip add <ip> - adds ip
+#   hubot ip add <ip> - adds ip ( '*' allows everybody )
 #   hubot ip flush - clears the ip table
 #
 # URLS:
@@ -47,7 +47,8 @@ module.exports = (robot) ->
 
   robot.router.get "/cmd*", (req,res) ->
     ip = req.headers['x-forwarded-for'] or req.connection.remoteAddress or req.socket.remoteAddress or req.connection.socket.remoteAddress;
-    if ip not in robot.brain.data.ip then return res.end "access denied"
+    if "*" not in robot.brain.data.ip
+      if ip not in robot.brain.data.ip then return res.end "access denied"
     args = req.url.split "/"
     args = args.filter (i) -> i isnt "cmd" and i isnt ""
     args = args.join " "
