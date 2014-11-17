@@ -31,7 +31,7 @@ spawn = require('child_process').spawn
 
 module.exports = (robot) ->
 
-  robot.brain.data.ip ?= []
+  robot.brain.data.ip ?= ["*"]
   
   robot.respond /ip flush$/i, (msg) ->
     robot.brain.data.ip = []
