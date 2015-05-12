@@ -40,6 +40,8 @@ Then do this:
 
 See? Terminal powa!
 
+NOTE: for a more robust/secure shellscript look <a target="_blank" href="https://gist.github.com/coderofsalvation/b1aaf0a6de5028eb294a" >here</a>
+
 # Why
 
 I made this since I could only find an example which demonstrated
