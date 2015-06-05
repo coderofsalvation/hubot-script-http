@@ -57,6 +57,11 @@ not using https + hubot's express authentication (using env variables).
 Since not everybody will go thru this labour of setting this up, I've included
  a pseudo ip-security.
 
+Anyways, try adding these express environment vars to get basic auth going:
+
+* EXPRESS_PASSWORD=yourpass
+* EXPRESS_USER=admin
+
 # Known issues
 
 * requesting non-existing commands can cause minor hickups on the adapter (since the adapter is temporarely overridden by httprequests).
